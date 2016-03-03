@@ -1,0 +1,27 @@
+##
+# Local .gitignore file
+#-----------------------
+##
+
+# OS-specific files
+.DS_Store
+thumbs.db
+dump.rdb
+
+# Editor-specific files
+*.swp
+.idea
+.project
+.buildpath
+.settings/
+.phpstorm.meta.php
+atlassian-ide-plugin.xml
+generate-phpstorm-metadata.coffee
+
+# Deps & build files
+/.tmp/
+
+# Vagrant/Docker/Puppet etc
+/.vagrant/
+node_modules/
+vendor/

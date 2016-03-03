@@ -1,0 +1,37 @@
+{
+    "name": "mikitu/data-converter",
+    "description": "Php package to manage queue tasks in a simple way",
+    "version": "1.0.0",
+    "keywords": ["data provider", "data converter", "custom data source"],
+    "homepage": "https://github.com/mikitu/data-converter",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai BUCSE",
+            "email": "mihaibucse@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "phpspec/phpspec": "^2.4"
+    },
+    "autoload": {
+        "psr-4" : {
+            "App\\": "src"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dump-autoload",
+            "./vendor/bin/phpspec run"
+        ],
+        "post-update-cmd": [
+            "composer dump-autoload",
+            "./vendor/bin/phpspec run"
+        ]
+    }
+}
